@@ -1,0 +1,9 @@
+- [ ] Phase 0: config, download script, requirements
+- [ ] Phase 1: corpus + qrels construction
+- [ ] Phase 2: preprocessing pipeline
+- [ ] Phase 3: inverted index + TF-IDF + BM25
+- [ ] Phase 4: dense retrieval (sentence-transformers + FAISS)
+- [ ] Phase 5: RRF hybrid fusion
+- [ ] Phase 6: evaluation metrics + comparison table + PR curve
+- [ ] Phase 7: search UI (Streamlit)
+- [ ] Phase 8: README + final report

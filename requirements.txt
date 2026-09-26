@@ -1,0 +1,14 @@
+pandas
+numpy
+scikit-learn
+rank_bm25
+sentence-transformers
+faiss-cpu
+nltk
+streamlit
+matplotlib
+pyyaml
+tqdm
+pytest
+black
+ruff

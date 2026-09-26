@@ -1,0 +1,17 @@
+seed: 42
+data:
+  raw_path: data/raw/questions.csv
+  corpus_path: data/processed/corpus.parquet
+  qrels_path: data/processed/qrels.parquet
+  eval_queries_path: data/processed/eval_queries.parquet
+  eval_query_count: 400
+preprocessing:
+  lowercase: true
+  remove_punct: true
+  remove_stopwords: true
+  stem: true
+retrieval:
+  top_k: 10
+  dense_model: sentence-transformers/all-MiniLM-L6-v2
+  rrf_k: 60
+  corpus_subsample: 100000
