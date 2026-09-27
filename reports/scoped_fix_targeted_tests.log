@@ -1,0 +1,22 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.7, pytest-9.0.2, pluggy-1.6.0 -- C:\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\shrey\duplicate-question-retrieval
+plugins: anyio-4.12.1, cov-7.0.0
+collecting ... collected 6 items
+
+tests/test_preprocessing.py::test_empty_string PASSED                    [ 16%]
+tests/test_preprocessing.py::test_numbers PASSED                         [ 33%]
+tests/test_preprocessing.py::test_contractions PASSED                    [ 50%]
+tests/test_preprocessing.py::test_all_features PASSED                    [ 66%]
+tests/test_short_text_bug.py::test_short_text_bug PASSED                 [ 83%]
+tests/test_short_text_bug.py::test_scoped_preprocessing_keeps_long_text_heavy PASSED [100%]
+
+============================== warnings summary ===============================
+tests/test_short_text_bug.py::test_short_text_bug
+  C:\Users\shrey\AppData\Roaming\Python\Python313\site-packages\sklearn\feature_extraction\text.py:532: UserWarning: The parameter 'preprocessor' will not be used since 'analyzer' is callable'
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 6 passed, 1 warning in 2.25s =========================
+TARGETED_TESTS_COMPLETED

@@ -1,9 +1,13 @@
-- [ ] Phase 0: config, download script, requirements
-- [ ] Phase 1: corpus + qrels construction
-- [ ] Phase 2: preprocessing pipeline
-- [ ] Phase 3: inverted index + TF-IDF + BM25
-- [ ] Phase 4: dense retrieval (sentence-transformers + FAISS)
-- [ ] Phase 5: RRF hybrid fusion
-- [ ] Phase 6: evaluation metrics + comparison table + PR curve
-- [ ] Phase 7: search UI (Streamlit)
+- [x] Phase 0: config, download script, requirements
+- [x] Phase 1: corpus + qrels construction
+- [x] Phase 2: preprocessing pipeline
+- [x] Phase 3: inverted index + TF-IDF + BM25
+- [x] Phase 4: dense retrieval (sentence-transformers + FAISS)
+- [x] Phase 5: RRF hybrid fusion
+- [x] Phase 6: evaluation metrics + comparison table + PR curve
+- [x] Phase 7: search UI (Streamlit)
+- [x] Short-text TF-IDF/BM25 fix (light preprocessing, word bigrams, char n-gram fallback) + re-run held-out evaluation
+- [x] Scoped second fix: choose light versus heavy preprocessing per text using the five-word threshold; verify segmented metrics and short-query tie behavior
+- [x] Third corrective fix: replace fragmented per-document tokenization with dual corpus-wide TF-IDF/BM25 spaces and RRF fusion; complete full evaluation and segmentation
+- [x] UI verification and completion: live-test all four retrievers and surface comparison table plus Precision-Recall graph in Streamlit tabs
 - [ ] Phase 8: README + final report

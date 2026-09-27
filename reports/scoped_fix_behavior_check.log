@@ -1,0 +1,4 @@
+threshold= 5
+short= True ['what', 'is', 'the', 'google']
+long= False ['best', 'way', 'organ', 'run', 'project', 'effect']
+CHECKS_EXIT_0  

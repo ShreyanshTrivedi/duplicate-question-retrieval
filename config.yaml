@@ -4,12 +4,15 @@ data:
   corpus_path: data/processed/corpus.parquet
   qrels_path: data/processed/qrels.parquet
   eval_queries_path: data/processed/eval_queries.parquet
+  embeddings_path: data/processed/embeddings.npy
   eval_query_count: 400
 preprocessing:
   lowercase: true
   remove_punct: true
   remove_stopwords: true
   stem: true
+  short_text_word_threshold: 5
+  min_tokens_fallback: 2
 retrieval:
   top_k: 10
   dense_model: sentence-transformers/all-MiniLM-L6-v2
