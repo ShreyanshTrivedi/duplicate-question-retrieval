@@ -83,3 +83,17 @@ def test_build_pr_figure_returns_four_traces():
     }
     fig = build_pr_figure(pr_data)
     assert len(fig.data) == 4
+
+
+def test_build_pr_figure_k10_marker_is_larger():
+    pr_data = {
+        "TF-IDF": {
+            "recall": [i / 10 for i in range(15)],
+            "precision": [1.0 - i / 20 for i in range(15)],
+        },
+    }
+    fig = build_pr_figure(pr_data)
+    sizes = fig.data[0].marker.size
+    k10_index = 9
+    other_sizes = [s for i, s in enumerate(sizes) if i != k10_index]
+    assert sizes[k10_index] > max(other_sizes)
