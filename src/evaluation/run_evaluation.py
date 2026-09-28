@@ -1,4 +1,5 @@
 import os
+import json
 import yaml
 import pandas as pd
 import numpy as np
@@ -120,6 +121,16 @@ def run_evaluation():
     plt.figure(figsize=(8, 6))
     for name in retrievers.keys():
         plt.plot(pr_data[name]["R"], pr_data[name]["P"], label=name, marker='.', markersize=4)
+
+    pr_curve_data = {
+        name: {
+            "recall": pr_data[name]["R"].tolist(),
+            "precision": pr_data[name]["P"].tolist(),
+        }
+        for name in retrievers.keys()
+    }
+    with open("reports/pr_curve_data.json", "w", encoding="utf-8") as file:
+        json.dump(pr_curve_data, file, indent=2)
         
     plt.xlabel('Recall')
     plt.ylabel('Precision')

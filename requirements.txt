@@ -6,6 +6,7 @@ sentence-transformers
 faiss-cpu
 nltk
 streamlit
+plotly
 matplotlib
 pyyaml
 tqdm
