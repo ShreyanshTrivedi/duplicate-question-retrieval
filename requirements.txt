@@ -13,3 +13,5 @@ tqdm
 pytest
 black
 ruff
+python-pptx
+python-docx

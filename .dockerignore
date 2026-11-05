@@ -1,0 +1,42 @@
+# VCS and editor/tool state
+.git/
+.gitignore
+.qodo/
+.ipynb_checkpoints/
+.DS_Store
+.pytest_cache/
+.vscode/
+.idea/
+
+# Local environments and secrets
+venv/
+.venv/
+.env
+
+# Python caches
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Data: never baked in; mounted at runtime (see docs/DEPLOYMENT.md)
+data/
+*.parquet
+*.npy
+*.faiss
+
+# Things the running app does not need
+docs/
+tests/
+notebooks/
+src/reporting/
+check_bm25.py
+check_bug.py
+verify_fix.py
+reports/*.log
+reports/*.docx
+reports/*.pptx
+reports/_e2e_spot5.py
+
+# Build artifacts and this file itself
+Dockerfile
+.dockerignore
